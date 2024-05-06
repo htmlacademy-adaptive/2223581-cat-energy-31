@@ -1,5 +1,44 @@
-.logo {}
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 56px;
 
-.logo__image {}
+  text-decoration: none;
 
-.logo__text {}
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    gap: 14px;
+  }
+
+  .logo__image {
+    width: 70px;
+    height: 59px;
+  }
+
+  .logo__text {
+    width: 118px;
+    height: 21px;
+  }
+}
