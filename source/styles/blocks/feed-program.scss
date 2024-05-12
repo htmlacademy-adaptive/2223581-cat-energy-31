@@ -1,21 +1,36 @@
-.feed-program {}
+.feed-program {
+  padding: 10px 20px;
+}
 
-.feed-program__list {}
+.feed-program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
 
-.feed-program__item {}
+  list-style-type: none;
+  padding: 0;
+}
 
-.feed-program__item--slim {}
+@media (min-width: 768px) {
+  .feed-program {
+    padding: 0 30px 30px;
+  }
 
-.feed-program__title {}
+  .feed-program__list {
+    gap: 30px;
+  }
+}
 
-.feed-program__description {}
 
-.feed-program__link {}
+@media (min-width: 1440px) {
+  .feed-program {
+    padding: 40 110px;
+  }
 
-.feed-program__item--pro {}
-
-.form-program__submit-container {}
-
-.form-program__button-submit {}
-
-.form-program__note {}
+  .feed-program__list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}

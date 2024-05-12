@@ -1,15 +1,28 @@
-.promo {}
+.promo {
+  min-height: 290px;
+  padding: 59px 60px 20px;
 
-.promo__container {}
+  color: $title-light-color-text;
+  background-image:
+    linear-gradient($bright-opacity-background-color, $bright-opacity-background-color),
+    image-set(url("../../images/image-gift-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/image-gift-mobile@2x.jpg") type("image/jpg") 2x);
+  background-color: $bright-background-color;
+  background-size: cover, auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
-.promo__content-container {}
+.promo__slogan {
+  padding-top: 128px;
+  margin: 0;
 
-.promo__title {}
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 
-.promo__slogan {}
-
-.promo__picture {}
-
-.promo__image {}
-
-.promo__program-choose {}
+  background-image: url("../../icons/stack.svg#promo-gift");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}

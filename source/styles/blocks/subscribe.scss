@@ -1,4 +1,19 @@
 .subscribe {
-  font-family: $primary-font;
+  padding: 20px 20px 40px;
+
+  font-family: $secondary-font;
 }
 
+.subscribe__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  @include font(inherit, 24px, 24px, 400, none, $title-color-text);
+}
+
+.subscribe__slogan {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @include font(inherit, 16px, 24px, 400, none, $title-color-text);
+}

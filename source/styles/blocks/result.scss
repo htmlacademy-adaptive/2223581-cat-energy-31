@@ -1,9 +1,76 @@
-.review {}
 
-.review__container {}
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
 
-.review__example {}
+.result__item {
+  position: relative;
 
-.review__slider {}
+  padding-bottom: 14px;
+}
+
+.result__term {
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+
+  width: 70%;
+  min-height: 24px;
+  padding: 0 10px;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+
+  background-color: #eaeaea;
+}
+
+.result__definition {
+  margin: 0;
+  padding: 14px 15px 18px;
+  min-width: 124px;
+
+  @include font($secondary-font, 24px, 24px, 400, uppercase, $base-color-text);
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .result {
+    gap: 42px;
+  }
+
+  .result__item {
+    min-width: 162px;
+  }
+
+  .result__term {
+    min-width: max-content;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    background-color: $base-background-color;
+  }
+
+  .result__definition {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 
 
+@media (min-width: 1440px) {
+  .result__term {
+    background-color: $soft-background-color;
+  }
+}

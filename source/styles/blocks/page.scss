@@ -13,12 +13,12 @@
   color: $title-color-text;
 }
 
-.page-footer {
+.page__footer {
   min-width: 320px;
 }
 
 @media (min-width: 1440px) {
-  .page-header__container {
+  .page__header--index {
     position: absolute;
     top: 0;
     left: 50%;

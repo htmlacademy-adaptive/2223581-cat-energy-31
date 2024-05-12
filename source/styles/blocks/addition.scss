@@ -1,11 +1,16 @@
-.addition-card {}
+.addition {
+  padding: 25px 20px 20px;
+}
 
-.addition-card__title {}
+.addition__title {
+  margin: 0;
+  margin-bottom: 35px;
 
-.addition-card__specification-list {}
+  @include font($secondary-font, 24px, 24px, 400, none, $title-color-text);
+}
 
-.addition-card__description {}
-
-.addition-card__value {}
-
-.addition-card__order-button {}
+.addition__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
