@@ -2,19 +2,3 @@
 
 @include font-face("Lato", 400, normal, url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));
 @include font-face("Oswald", 400, normal, url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../../fonts/oswald/oswaldregular.woff") format("woff"));
-
-// @font-face {
-//   font-family: "Lato";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: swap;
-//   src: url("./fonts/Lato/Lato-Regular.woff2") format("woff2"), url("./fonts/Lato/Lato-Regular.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Oswald";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: swap;
-//   src: url("./fonts/Oswald/oswaldregular.woff2") format("woff2"), url("./fonts/Oswald/oswaldregular.woff") format("woff");
-// }

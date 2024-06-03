@@ -1,12 +1,17 @@
 .main-footer {
+  @include font($primary-font, 16px, 20px, 400, none, $base-color-text);
+  background-color: $soft-background-color;
+}
+
+.main-footer__wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 40px 20px;
-
-  @include font($primary-font, 16px, 20px, 400, none, $base-color-text);
-
-  background-color: $soft-background-color;
 }
 
 .main-footer__logo {
@@ -20,21 +25,30 @@
   height: 24px;
 }
 
+.main-footer__social {
+  margin: 0;
+}
+
 .main-footer__copyright {
   display: block;
 }
 
-@media (min-width: 768px) {
-  .main-footer {
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px;
+    padding: 57px 30px;
+  }
+
+  .main-footer__social {
+    max-width: 200px;
+    margin-left: 34px;
   }
 }
 
-@media (min-width: 768px) {
-  .main-footer {
-    padding: 66px 110px;
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding: 68px 110px;
   }
 }

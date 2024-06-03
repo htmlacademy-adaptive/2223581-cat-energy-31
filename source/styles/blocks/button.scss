@@ -8,7 +8,6 @@
 
   background-color: $bright-background-color;
   border: none;
-
   cursor: pointer;
 
   &:hover {
@@ -23,6 +22,8 @@
 
 .button--tall {
   padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .button--secondary {
@@ -36,10 +37,9 @@
   }
 }
 
-@media (min-width: 768px) {
-  .button {
-    padding: 14px;
-
+@media (min-width: $tablet-width) {
+  .button--hero {
+    padding: 15px;
     font-size: 20px;
     line-height: 26px;
   }

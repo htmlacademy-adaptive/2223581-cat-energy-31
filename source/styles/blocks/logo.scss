@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 56px;
-
   text-decoration: none;
 
   &:hover {
@@ -27,7 +26,18 @@
   height: 18px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $tablet-width) {
+  .logo {
+    gap: 13px;
+  }
+
+  .logo__image {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .logo {
     gap: 14px;
   }
