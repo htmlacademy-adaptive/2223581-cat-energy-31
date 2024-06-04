@@ -32,7 +32,7 @@
   }
 
   .feed-program__list {
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 80px;
   }

@@ -1,6 +1,6 @@
 .benefit {
   position: relative;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 22px;
   background-color: $soft-background-color;
 
   &::before {
@@ -90,7 +90,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .benefit {
     padding: 77px 63px 53px 53px;
     min-height: 372px;
@@ -152,7 +152,7 @@
   .benefit {
     padding: 77px 61px 55px 52px;
     min-height: 374px;
-    min-width: 570px;
+    max-width: 570px;
 
     &::before {
       top: 47px;

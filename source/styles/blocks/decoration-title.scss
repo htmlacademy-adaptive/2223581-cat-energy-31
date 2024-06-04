@@ -1,4 +1,4 @@
-.decor-title {
+.decoration-title {
   position: relative;
   width: fit-content;
   padding-right: 40px;
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .decor-title {
+  .decoration-title {
     padding-left: 40px;
     box-shadow: none;
 
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .decor-title {
+  .decoration-title {
     padding-left: 0;
     box-shadow: -40px 0 0 0 $base-background-color;
 
