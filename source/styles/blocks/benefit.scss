@@ -12,6 +12,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: #68b738;
+    display: block;
   }
 }
 
@@ -53,7 +54,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-top: 19px;
+  padding-top: 17px;
   border-top: 1px solid #d9d9d9;
 
   @include font($secondary-font, 16px, 16px, 400, uppercase, $title-color-text);
@@ -92,13 +93,10 @@
 
 @media (min-width: $tablet-width) {
   .benefit {
-    padding: 77px 63px 53px 53px;
-    min-height: 372px;
+    padding: 75px 52px 60px;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: 92px;
+      top: 90px;
       right: 63px;
       left: auto;
       width: 200px;
@@ -108,7 +106,7 @@
 
   .benefit--slim::after {
     right: 93px;
-    top: 81px;
+    top: 83px;
     left: auto;
     width: 140px;
     height: 194px;
@@ -117,7 +115,7 @@
   .benefit--pro::after {
     left: auto;
     right: 29px;
-    top: 135px;
+    top: 132px;
     width: 268px;
     height: 112px;
   }
@@ -132,9 +130,9 @@
   }
 
   .benefit__description {
-    max-width: calc(100% - 250px);
-    margin-top: 0;
-    margin-bottom: 33px;
+    border-bottom: none;
+    max-width: 350px;
+    margin-bottom: 35px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;

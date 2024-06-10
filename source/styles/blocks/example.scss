@@ -10,6 +10,10 @@
   padding: 25px 20px 40px;
 }
 
+.example__info {
+  min-width: 280px;
+}
+
 .example__title {
   margin-top: 0;
   margin-bottom: 40px;
@@ -17,7 +21,7 @@
   @include font($secondary-font, 36px, 40px, 400, none, $title-color-text);
 }
 
-.example__description {
+.example__history {
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -46,7 +50,6 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 45px 30px 101px;
     background-color: $base-background-color;
     background-image: linear-gradient(to top, #eaeaea 462px, $base-background-color 462px);
   }
@@ -61,7 +64,7 @@
     line-height: 60px;
   }
 
-  .example__description {
+  .example__history {
     margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
@@ -91,7 +94,11 @@
     display: grid;
     grid-template-columns: auto 560px;
     gap: 210px;
-    padding: 38px 110px 75px;
+    padding: 78px 110px 75px;
+  }
+
+  .example__info {
+    max-width: 436px;
   }
 
   .example__title {
@@ -99,13 +106,19 @@
   }
 
   .example__description {
+    margin-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__history {
     margin-bottom: 69px;
   }
 
   .example__results-wrapper {
     flex-direction: column;
     align-items: flex-start;
-    gap: 47px;
+    gap: 46px;
     margin-bottom: 0;
   }
 }

@@ -1,8 +1,9 @@
 .card {
   display: grid;
+  grid-template-columns: 140px auto;
   grid-template-areas: "img title" "img settings" "button button";
-  padding: 20px 20px 25px;
-
+  padding: 19px 20px 24px;
+  align-items: center;
   border-bottom: 1px solid #ebebeb;
 
   &:first-child {
@@ -79,6 +80,7 @@
 
 .card--show-more .card__link-title {
   max-width: fit-content;
+  padding-top: 25px;
 }
 
 .card--show-more .card__title {
@@ -88,7 +90,7 @@
   background-image: url("../../icons/stack.svg#card-plus");
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 50% 11px;
 }
 
 .card__addition {
@@ -110,7 +112,6 @@
     justify-items: center;
     gap: 20px;
     padding: 11px 37px 40px;
-
     background-image: linear-gradient(to bottom, $base-background-color 81px, $soft-background-color 81px);
     border: none;
 
@@ -159,7 +160,6 @@
     gap: 0;
     place-items: end center;
     padding-top: 25px;
-
     background-color: $base-background-color;
     background-image: none;
     border: 2px solid $soft-background-color;
@@ -170,7 +170,7 @@
   }
 
   .card--show-more .card__title {
-    padding-top: 110px;
+    padding-top: 120px;
     background-size: 60px 60px;
   }
 

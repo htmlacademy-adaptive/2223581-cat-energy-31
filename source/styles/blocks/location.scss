@@ -25,17 +25,6 @@
   line-height: 20px;
 }
 
-.location__map {
-  height: 362px;
-  overflow: hidden;
-  background-image:
-    image-set(url("../../images/map-mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../images/map-mobile@2x.jpg") type("image/jpg") 2x);
-  background-repeat: no-repeat;
-  background-size: 320px 362px;
-  background-position: center;
-}
-
 @media (min-width: $tablet-width) {
   .location__wrapper {
     gap: 300px;
@@ -52,22 +41,10 @@
     font-size: 16px;
     text-align: right;
   }
-
-  .location__map {
-    min-height: 400px;
-    background-image:
-      image-set(
-        url("../../images/map-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
-        url("../../images/map-tablet@1x.jpg") type("image/jpg") 1x,
-        url("../../images/map-tablet@2x.jpg") type("image/jpg") 2x);
-    background-size: $tablet-width 400px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .location {
-    position: relative;
     display: grid;
     grid-template-columns: calc(50% - 45px) 45px 50%;
     grid-template-rows: 95px auto 106px;
@@ -87,15 +64,52 @@
   .location__address {
     text-align: left;
   }
+}
 
-  .location__map {
-    grid-column: 1 / 4;
-    grid-row: 1 / 4;
-    min-height: 100%;
+.map {
+  background-image:
+    image-set(
+      url("../../images/map-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/map-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 
+@media (min-width: $tablet-width) {
+  .map {
     background-image:
-      image-set(url("../../images/map-desktop@1x.jpg") type("image/jpg") 1x,
-      url("../../images/map-desktop@2x.jpg") type("image/jpg") 2x);
-    background-size: $desktop-width 400px;
+      image-set(
+        url("../../images/map-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/map-background-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/map-background-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../images/map-background-tablet@2x.jpg") type("image/jpg") 2x);
+
+    min-height: 400px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image:
+      image-set(
+        url("../../images/map-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/map-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/map-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/map-background-desktop@2x.jpg") type("image/jpg") 2x);
+  }
+}
+
+.map__google {
+  display: block;
+  border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
+
