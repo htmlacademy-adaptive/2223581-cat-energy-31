@@ -25,6 +25,30 @@
   line-height: 20px;
 }
 
+.location__map {
+  min-height: 362px;
+  border: none;
+}
+
+.map__yandex {
+  display: block;
+  border: none;
+  width: 100%;
+}
+
+.map {
+  background-image:
+    image-set(
+      url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/map-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/map-mobile@2x.png") type("image/png") 2x,
+      url("../../images/map-mobile@1x.png") type("image/png") 1x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .location__wrapper {
     gap: 300px;
@@ -40,6 +64,20 @@
     gap: 20px;
     font-size: 16px;
     text-align: right;
+  }
+
+  .location__map {
+    min-height: 400px;
+  }
+
+  .map {
+    background-image:
+      image-set(
+        url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/map-tablet@@1x.webp") type("image/webp") 1x,
+        url("../../images/map-tablet@@2x.png") type("image/png") 2x,
+        url("../../images/map-tablet@@1x.png") type("image/png") 1x
+      );
   }
 }
 
@@ -64,52 +102,19 @@
   .location__address {
     text-align: left;
   }
-}
 
-.map {
-  background-image:
-    image-set(
-      url("../../images/map-background-mobile@1x.webp") type("image/webp") 1x,
-      url("../../images/map-background-mobile@2x.webp") type("image/webp") 2x,
-      url("../../images/map-background-mobile@1x.jpg") type("image/jpg") 1x,
-      url("../../images/map-background-mobile@2x.jpg") type("image/jpg") 2x);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-
-@media (min-width: $tablet-width) {
   .map {
     background-image:
       image-set(
-        url("../../images/map-background-tablet@1x.webp") type("image/webp") 1x,
-        url("../../images/map-background-tablet@2x.webp") type("image/webp") 2x,
-        url("../../images/map-background-tablet@1x.jpg") type("image/jpg") 1x,
-        url("../../images/map-background-tablet@2x.jpg") type("image/jpg") 2x);
+        url("../../images/map@2x.webp") type("image/webp") 2x,
+        url("../../images/map@@1x.webp") type("image/webp") 1x,
+        url("../../images/map@@2x.png") type("image/png") 2x,
+        url("../../images/map@@1x.png") type("image/png") 1x
+      );
 
-    min-height: 400px;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .map {
-    background-image:
-      image-set(
-        url("../../images/map-background-desktop@1x.webp") type("image/webp") 1x,
-        url("../../images/map-background-desktop@2x.webp") type("image/webp") 2x,
-        url("../../images/map-background-desktop@1x.jpg") type("image/jpg") 1x,
-        url("../../images/map-background-desktop@2x.jpg") type("image/jpg") 2x);
-  }
-}
-
-.map__google {
-  display: block;
-  border: none;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    min-height: 400px;
+    .location__map {
+      grid-area: 1/1/-1/-1;
+    }
   }
 }
 
