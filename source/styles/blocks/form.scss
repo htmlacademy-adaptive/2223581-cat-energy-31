@@ -45,8 +45,7 @@
   }
 
   &:focus {
-    border-width: 2px;
-    border-color: #444444;
+    outline: 2px #444444 solid;
   }
 
   &--subscribe {
