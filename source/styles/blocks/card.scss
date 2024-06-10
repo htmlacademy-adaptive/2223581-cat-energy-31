@@ -80,7 +80,7 @@
 
 .card--show-more .card__link-title {
   max-width: fit-content;
-  padding-top: 25px;
+  padding-top: 0;
 }
 
 .card--show-more .card__title {
@@ -170,7 +170,7 @@
   }
 
   .card--show-more .card__title {
-    padding-top: 120px;
+    padding-top: 115px;
     background-size: 60px 60px;
   }
 
@@ -181,7 +181,7 @@
   }
 
   .card--show-more .card__button {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
 

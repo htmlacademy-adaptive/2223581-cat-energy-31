@@ -80,7 +80,7 @@
     display: contents;
   }
 
-  .main-header__nav--opened {
+  .main-header__navigation--open {
     position: absolute;
   }
 
@@ -125,18 +125,7 @@
   }
 }
 
-@media (max-width: 320px) {
-  .main-header__navigation-toggle--open .main-navigation__list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: block;
-    width: 100%;
-    background-color: $white-color;
-  }
-
-  .main-header__nav--closed .main-header__item {
-    display: none;
-  }
+.main-header__nav--close .main-header__item {
+  display: none;
 }
+

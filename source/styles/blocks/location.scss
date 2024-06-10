@@ -26,17 +26,9 @@
 }
 
 .location__map {
-  min-height: 362px;
+  height: 362px;
   border: none;
-}
-
-.map__yandex {
-  display: block;
-  border: none;
-  width: 100%;
-}
-
-.map {
+  background-position: center;
   background-image:
     image-set(
       url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
@@ -44,10 +36,12 @@
       url("../../images/map-mobile@2x.png") type("image/png") 2x,
       url("../../images/map-mobile@1x.png") type("image/png") 1x
     );
+
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
+
 
 @media (min-width: $tablet-width) {
   .location__wrapper {
@@ -67,10 +61,7 @@
   }
 
   .location__map {
-    min-height: 400px;
-  }
-
-  .map {
+    height: 400px;
     background-image:
       image-set(
         url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
@@ -79,42 +70,38 @@
         url("../../images/map-tablet@@1x.png") type("image/png") 1x
       );
   }
-}
 
-@media (min-width: $desktop-width) {
-  .location {
-    display: grid;
-    grid-template-columns: calc(50% - 45px) 45px 50%;
-    grid-template-rows: 95px auto 106px;
-  }
+  @media (min-width: $desktop-width) {
+    .location {
+      display: grid;
+      grid-template-columns: calc(50% - 45px) 45px 50%;
+      grid-template-rows: 95px auto 106px;
+    }
 
-  .location__wrapper {
-    width: 565px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: end;
-    z-index: 1;
-    gap: 87px;
-    padding: 60px 80px;
-    background-color: $base-background-color;
-  }
+    .location__wrapper {
+      width: 565px;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      justify-self: end;
+      z-index: 1;
+      gap: 87px;
+      padding: 60px 80px;
+      background-color: $base-background-color;
+    }
 
-  .location__address {
-    text-align: left;
-  }
-
-  .map {
-    background-image:
-      image-set(
-        url("../../images/map@2x.webp") type("image/webp") 2x,
-        url("../../images/map@@1x.webp") type("image/webp") 1x,
-        url("../../images/map@@2x.png") type("image/png") 2x,
-        url("../../images/map@@1x.png") type("image/png") 1x
-      );
+    .location__address {
+      text-align: left;
+    }
 
     .location__map {
+      background-image:
+        image-set(
+          url("../../images/map@2x.webp") type("image/webp") 2x,
+          url("../../images/map@@1x.webp") type("image/webp") 1x,
+          url("../../images/map@@2x.png") type("image/png") 2x,
+          url("../../images/map@@1x.png") type("image/png") 1x
+        );
       grid-area: 1/1/-1/-1;
     }
   }
 }
-
